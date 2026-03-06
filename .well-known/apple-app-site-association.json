@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["YOURTEAMID.com.yourcompany.radius"],
+        "components": [
+          { "/": "/profile/*" }
+        ]
+      }
+    ]
+  }
+}
