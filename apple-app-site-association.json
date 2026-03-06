@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appIDs": ["WW36QSSJ26.com.yourcompany.radius"],
+        "appIDs": ["WW36QSSJ26.ai.myradius.radius"],
         "components": [
           { "/": "/profile/*" }
         ]
