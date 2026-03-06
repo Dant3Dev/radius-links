@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appIDs": ["YOURTEAMID.com.yourcompany.radius"],
+        "appIDs": ["WW36QSSJ26.com.yourcompany.radius"],
         "components": [
           { "/": "/profile/*" }
         ]
