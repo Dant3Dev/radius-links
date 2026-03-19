@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Radius</title>
+  <script>
+    // GitHub Pages SPA redirect trick:
+    // Encode the full path into a query param and redirect to the repo root index.html
+    var path = window.location.pathname;
+    var search = window.location.search;
+    var hash = window.location.hash;
+    var redirectUrl = '/radius-links/?p=' + encodeURIComponent(path) + (search ? '&' + search.slice(1) : '') + hash;
+    window.location.replace(redirectUrl);
+  </script>
+</head>
+<body></body>
+</html>

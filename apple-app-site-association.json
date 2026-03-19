@@ -5,7 +5,7 @@
       {
         "appIDs": ["WW36QSSJ26.ai.myradius.radius"],
         "components": [
-          { "/": "/profile/*" }
+          { "/": "/radius-links/profile/*" }
         ]
       }
     ]

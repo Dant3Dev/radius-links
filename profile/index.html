@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="apple-itunes-app" content="app-id=YOUR_APP_STORE_ID">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Radius</title>
+  <title>Radius Profile</title>
 </head>
 <body>
   <script>
+    // This page is only reached if the app is NOT installed (universal link already
+    // opened the app when it is installed). Redirect to the App Store.
     window.location.href = "https://apps.apple.com/app/idYOUR_APP_STORE_ID";
   </script>
   <p>Download Radius on the App Store</p>
