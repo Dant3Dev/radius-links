@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="apple-itunes-app" content="app-id=YOUR_APP_STORE_ID">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Radius Profile</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; text-align: center;
+           padding: 60px 24px; background: #f2f4f8; color: #1a1a2e; }
+    a.btn { display: inline-block; margin-top: 24px; padding: 14px 28px;
+            background: #1a73e8; color: #fff; border-radius: 12px;
+            text-decoration: none; font-size: 16px; }
+  </style>
 </head>
 <body>
+  <h2>Opening Radius&hellip;</h2>
+  <p>If nothing happens, download the app.</p>
+  <a class="btn" href="https://apps.apple.com/app/idYOUR_APP_STORE_ID">Download on the App Store</a>
   <script>
-    // This page is only reached if the app is NOT installed (universal link already
-    // opened the app when it is installed). Redirect to the App Store.
-    window.location.href = "https://apps.apple.com/app/idYOUR_APP_STORE_ID";
+    var params = new URLSearchParams(window.location.search);
+    var userId = params.get('id');
+    if (userId) {
+      window.location.href = 'radius://profile/' + encodeURIComponent(userId);
+      setTimeout(function () {
+        window.location.href = 'https://apps.apple.com/app/idYOUR_APP_STORE_ID';
+      }, 2000);
+    }
   </script>
-  <p>Download Radius on the App Store</p>
 </body>
 </html>
